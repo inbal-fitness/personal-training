@@ -1,0 +1,51 @@
+body {
+  font-family: "Rubik", sans-serif;
+}
+.active:hover {
+  cursor: pointer;
+}
+
+#desktop {
+  display: none;
+}
+
+#tablet {
+  display: none;
+}
+
+#mobile {
+  width: 360px;
+  background: #fff;
+  display: block;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 601px) {
+  #mobile {
+    display: none;
+  }
+  #tablet {
+    width: 600px;
+    background: #fff;
+    margin: 0px auto;
+    display: block;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 841px) {
+  #mobile {
+    display: none;
+  }
+  #tablet {
+    display: none;
+  }
+  #desktop {
+    width: 840px;
+    background: #fff;
+    margin: 0px auto;
+    display: block;
+    overflow: hidden;
+  }
+}
